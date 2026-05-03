@@ -28,22 +28,7 @@ cat .specify/memory/*.md | grep -n "allow-existing\|GIT_BRANCH_NAME\|feature.jso
 ```
  
 If any references are missing, run it again — occasionally Claude saves a partial amendment.
- 
-## Folder structure
- 
-```
-specs/
-├── TEST-01/
-│   ├── create-home-page/
-│   │   └── spec.md
-│   └── create-nav-bar/
-│       └── spec.md
-└── TEST-02/
-    └── create-about-us-page/
-        └── spec.md
-```
- 
-One branch per ticket. Multiple specs nested under the same ticket. No sequential numbering.
+
  
 ## What it adds
  
@@ -71,3 +56,19 @@ Rules that Claude follows on every `/speckit-specify` invocation:
 | On `TEST-1`, provide `TEST-2` | Stops — instructs user to switch to main first |
 | On `main`, provide `TEST-2` | Creates `TEST-2` branch, creates nested spec |
 | Provide `001` | Rejected — must have non-numeric prefix |
+
+## Example Folder structure
+ 
+```
+specs/
+├── TEST-01/
+│   ├── create-home-page/
+│   │   └── spec.md
+│   └── create-nav-bar/
+│       └── spec.md
+└── TEST-02/
+    └── create-about-us-page/
+        └── spec.md
+```
+ 
+One branch per ticket. Multiple specs nested under the same ticket. No sequential numbering.
