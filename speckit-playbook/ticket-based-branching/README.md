@@ -15,7 +15,7 @@ Run this as the first amendment on any new SpecKit project, immediately after `/
  
 ## How to apply
  
-Copy the entire contents of [`AMENDMENT_PROMPT.md`](./AMENDMENT_PROMPT.md) and run it in your Claude session:
+Copy the entire contents of [`CONSTITUTION_PROMPT.md`](./CONSTITUTION_PROMPT.md) and run it in your Claude session:
  
 ```
 /speckit-constitution {paste contents here}
